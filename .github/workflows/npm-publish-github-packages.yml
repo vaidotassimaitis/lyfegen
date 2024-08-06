@@ -19,4 +19,4 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 30m
         script: | 
-          echo "cd /lyfegen/lyfegen; ls"
+          cd /lyfegen/lyfegen; ls
