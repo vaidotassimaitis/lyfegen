@@ -22,3 +22,7 @@ export var AgreementDetailsPage = {
     Name : '',
     Details : ''
 };
+
+export function fail(message){
+    throw new Error(message);
+};

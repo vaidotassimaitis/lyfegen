@@ -1,13 +1,13 @@
 import * as components from './components/components';
 
-describe('Agreement feature', () => {
+var financialReportingFilters = [
+  'date of addition',
+  'financial amounts',
+  'number of patients',
+  'drug name'
+];
 
-  var financialReportingFilters = [
-    'date of addition',
-    'financial amounts',
-    'number of patients',
-    'drug name'
-  ];
+describe('Agreement feature', function () {
 
   it('Agreements browsing', () => {
     cy.login(Cypress.env('Username'), Cypress.env('Password'));
@@ -70,7 +70,10 @@ function CheckReportingAgreement(){
 };
 
 function FilterFinancialReportBy(filter){
-
+  if(filter === 'number of patients')
+  {
+    components.fail('This is an intensional failure for demonstration purposes only')
+  }
 };
 
 function UserChecksDataInTable(){
@@ -82,5 +85,5 @@ function UserClicksPageNavigation(navigation){
 };
 
 function CheckResultsOfTheTable(data){
-
+  components.fail('This is an intensional failure for demonstration purposes only')
 };
