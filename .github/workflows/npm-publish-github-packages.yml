@@ -15,7 +15,7 @@ jobs:
       with:
         host: ${{ secrets.HOSTNAME }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSHKEYPU }}
+        key: ${{ secrets.SSHKEYPR }}
         port: ${{ secrets.PORT }}
         command_timeout: 30m
         script: | 
