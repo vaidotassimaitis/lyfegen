@@ -8,6 +8,7 @@ This project is for demonstrations only
 * For the first time, run 'npm install'
 * Execute command 'npx cypress run' to run tests in background
 * Execute command 'npx cypress open' to open Cypress application
+* Depending on the OS, there could be that additional dependencies will be needed. Check here for more https://docs.cypress.io/guides/getting-started/installing-cypress#Linux-Prerequisites
 
 ### Setting up project from scratch ###
 

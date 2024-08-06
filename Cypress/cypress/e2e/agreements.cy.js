@@ -10,13 +10,15 @@ describe('Agreement feature', () => {
   ];
 
   it('Agreements browsing', () => {
-    cy.login(Cypress.env('Username'), Cypress.env('Password'))
+    cy.login(Cypress.env('Username'), Cypress.env('Password'));
     UserGoesToAgreementsPage();
-
+    UserChecksDataInTable();
+    UserClicksPageNavigation('last');
+    UserChecksDataInTable();
   });
 
   it('Agreement search and filtering', () => {
-    cy.login(Cypress.env('Username'), Cypress.env('Password'))
+    cy.login(Cypress.env('Username'), Cypress.env('Password'));
     UserGoesToAgreementsPage();
     SearchForAgreementByName('existing name');
     CheckResultsOfTheTable('existing name');
@@ -69,5 +71,13 @@ function CheckReportingAgreement(){
 };
 
 function FilterFinancialReportBy(filter){
+
+};
+
+function UserChecksDataInTable(){
+
+};
+
+function UserClicksPageNavigation(navigation){
 
 };
