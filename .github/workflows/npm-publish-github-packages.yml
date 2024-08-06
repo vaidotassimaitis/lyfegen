@@ -19,4 +19,4 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 30m
         script: | 
-          cd lyfegen/lyfegen/Cypress; git pull; npx cypress run
+          cd lyfegen/lyfegen/Cypress; git pull; npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
