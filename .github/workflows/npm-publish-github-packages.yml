@@ -1,0 +1,24 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+
+name: Lyfegen
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  run_example_job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: print out example job
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.HOSTNAME }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSHKEYPU }}
+        port: ${{ secrets.PORT }}
+        command_timeout: 30m
+        script: | 
+          echo "Nice Job!!!"
