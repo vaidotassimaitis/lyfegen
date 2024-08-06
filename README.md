@@ -21,10 +21,17 @@ This project is for demonstrations only
 
 In this project 2 reporting examples are being used:
 
-* Locally generated test run report. Run command with '--reporter mochawesome', for example:
+* Locally generated test run report. 
 
-    'npx cypress run --reporter mochawesome'
+  Cypress config part '"reporter": "mochawesome"' allows to generate test report automatically. 
 
   This will generate HTML report in cypress project folder 'report\mochawesome-report'
 
 * Cypress Cloud
+
+  To have results stored in Cypress Cloud, registration or invitation from another user is needed, and Cypress must be configured and ran with specific cmd.
+
+  In this particular case, projectId is added to config file:
+
+    projectId: "1pkdhr"
+
