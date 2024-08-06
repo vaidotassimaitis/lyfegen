@@ -17,6 +17,10 @@ This project is for demonstrations only
 
 ### CI/CD ###
 
+For this particular project, integration is done using GitHub Actions. File which is used: .github\workflows\npm-publish-github-packages.yml
+
+This GitHub Action is triggered on every push, pulls code in remove machine and executes Cypress tests.
+
 ### Reporting ###
 
 In this project 2 reporting examples are being used:
@@ -35,3 +39,6 @@ In this project 2 reporting examples are being used:
 
     projectId: "1pkdhr"
 
+  To simply run tests and store results in Cypress Cloud, execute cmd with parameters:
+
+    npx cypress run --record --key da61273c-02f3-4de1-9086-2d6c5c867ca1
