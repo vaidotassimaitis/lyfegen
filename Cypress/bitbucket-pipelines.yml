@@ -1,0 +1,8 @@
+# Pipeline for Lyfegen trial task.
+
+pipelines:
+  default:
+    - step:
+        deployment: staging
+        script:
+          - ssh -v root@192.81.216.124 "echo GO TO DIR; cd lyfegen/lyfegentrialtask; echo GIT PULL; sudo git pull; echo RUN CYPRESS; npm run cy:run"
