@@ -3,9 +3,7 @@
 
 name: Lyfegen
 
-on:
-  release:
-    types: [created]
+on: [push]
 
 jobs:
   run_example_job:
