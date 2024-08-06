@@ -8,7 +8,7 @@ module.exports = defineConfig({
   viewportHeight: 1080,
   defaultCommandTimeout: 10000,
   env: {
-    Username: 'test',
+    Username: 'test@test.com',
     Password: 'test',
   },
   e2e: {

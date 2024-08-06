@@ -4,7 +4,7 @@ This project is for demonstrations only
 
 ### How to run tests of this project ###
 
-* Pull code of this project
+* Pull code of this project, use 'develop' branch
 * For the first time, run 'npm install'
 * Execute command 'npx cypress run' to run tests in background
 * Execute command 'npx cypress open' to open Cypress application

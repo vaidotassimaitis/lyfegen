@@ -22,7 +22,6 @@ describe('Agreement feature', () => {
     UserGoesToAgreementsPage();
     SearchForAgreementByName('existing name');
     CheckResultsOfTheTable('existing name');
-    UserGoesToAgreementsPage();
     SearchForAgreementByName('Non-existing name');
     cy.get(components.AgreementsList.Row).should('not.exist');
   });
@@ -79,5 +78,9 @@ function UserChecksDataInTable(){
 };
 
 function UserClicksPageNavigation(navigation){
+
+};
+
+function CheckResultsOfTheTable(data){
 
 };
