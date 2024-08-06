@@ -4,10 +4,11 @@ This project is for demonstrations only
 
 ### How to run tests of this project ###
 
-* Pull code of this project
+* Pull code of this project, use 'develop' branch
 * For the first time, run 'npm install'
 * Execute command 'npx cypress run' to run tests in background
 * Execute command 'npx cypress open' to open Cypress application
+* Depending on the OS, there could be that additional dependencies will be needed. Check here for more https://docs.cypress.io/guides/getting-started/installing-cypress#Linux-Prerequisites
 
 ### Setting up project from scratch ###
 
@@ -16,6 +17,10 @@ This project is for demonstrations only
 * Depending on the OS, there could be that additional dependencies will be needed. Check here for more https://docs.cypress.io/guides/getting-started/installing-cypress#Linux-Prerequisites
 
 ### CI/CD ###
+
+For this particular project, integration is done using GitHub Actions. File which is used: .github\workflows\npm-publish-github-packages.yml
+
+This GitHub Action is triggered on every push, pulls code in remove machine and executes Cypress tests.
 
 ### Reporting ###
 
@@ -35,3 +40,6 @@ In this project 2 reporting examples are being used:
 
     projectId: "1pkdhr"
 
+  To simply run tests and store results in Cypress Cloud, execute cmd with parameters:
+
+    npx cypress run --record --key da61273c-02f3-4de1-9086-2d6c5c867ca1

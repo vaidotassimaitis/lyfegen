@@ -6,7 +6,6 @@ Cypress.Commands.add('login', (username, password) => {
         clickButtonInMyPrivacySettings(components.myPrivacySettingsPopup.AcceptAllButton);
         cy.get(components.LoginPage.usernameInputField).type(username);
         cy.get(components.LoginPage.passwordInputField).type(password);
-        cy.get(components.LoginPage.loginButton).click();
     })
   });
 
